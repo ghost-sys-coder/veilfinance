@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/components/shared/Footer";
 import Header from "@/components/shared/Header";
 import { ClerkProvider } from "@clerk/nextjs";
+import { Toaster } from "sonner";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <body className={`${inter.className}} antialiased`}>
           <Header />
           <main className="min-h-screen">{children}</main>
+          <Toaster richColors />
           <Footer />
         </body>
       </html>
