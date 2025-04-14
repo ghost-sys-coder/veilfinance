@@ -7,8 +7,7 @@ import { LayoutDashboard, PenBox } from "lucide-react";
 import { checkUser } from "@/lib/checkUser";
 
 const Header = async () => {
-  const { newUser } = await checkUser();
-  console.log({ "checkNewUser": newUser });
+  // await checkUser();
   return (
     <div className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b">
       <nav className="flex justify-between items-center py-4 px-4 container">
