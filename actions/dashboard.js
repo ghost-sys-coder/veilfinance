@@ -64,4 +64,4 @@ export async function createAccount(data) {
     } catch (error) {
         console.log("Failed to create account", error);
     }
-}
+}   
