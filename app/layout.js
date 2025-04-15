@@ -4,7 +4,6 @@ import Footer from "@/components/shared/Footer";
 import Header from "@/components/shared/Header";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "sonner";
-import { checkUser } from "@/lib/checkUser";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,8 +14,8 @@ export const metadata = {
   description: "AI Powered Finance analysis and tracker Web Application",
 };
 
-export default async function RootLayout({ children }) {
-  await checkUser();
+export default function RootLayout({ children }) {
+  
   return (
     <ClerkProvider>
       <html lang="en">
